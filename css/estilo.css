@@ -1,0 +1,39 @@
+html,body{
+	margin: 0px;
+	height: 100%;
+}
+body{
+	background: url("../img/fondo3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.principal{
+	height: 100%;
+}
+.principal div{
+	background-color: rgba(0,50,100,0.4);
+	width: 100%;
+	height: 100%;
+}
+.principal div p{
+	margin: 0px;
+}
+.texto{
+    padding-top: 10%;
+    color: #FFF;
+    text-shadow: 2px 2px #000;
+    font-family: 'Courgette', cursive;
+	font-size: 40px;
+}
+.dias{
+    color: #000;
+    font-family: 'Courgette', cursive;
+	font-size: 30px;
+	background-color: #fff;
+}
+.img-center{
+	width: 25%;
+	padding-top: 10%;
+    margin: auto;
+    display: block;
+}
