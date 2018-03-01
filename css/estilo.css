@@ -1,39 +1,296 @@
-html,body{
-	margin: 0px;
-	height: 100%;
-}
 body{
-	background: url("../img/fondo3.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+	margin: 0;
+	padding: 0;
 }
-.principal{
-	height: 100%;
+header{
+	background-color: #F7F7F7;
 }
-.principal div{
-	background-color: rgba(0,50,100,0.4);
-	width: 100%;
-	height: 100%;
+.social{
+	margin-top: 30px;
 }
-.principal div p{
+#logo{
+	margin-top: 5px;
+	width: 70%;
+}
+#insecion{
+	margin-top: 15px;
+}
+#ingrese{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 5px;
+}
+nav{
+	margin-top: 20px;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.navbar-primary{
+	background-color: rgba(235,235,235,0.9);
+}
+.navbar-primary .navbar-brand{
+	color: #0063C9;
+	font-family: 'Chicle', cursive;
+	font-size: 25px;
+}
+.navbar-primary .navbar-nav > li{
+	margin-right: 15px;
+}
+.navbar-primary .navbar-nav > li > a{
+	color: #0063C9;
+	font-family: 'Anton', serif;
+	font-size: 18px;
+}
+.navbar-right > a{
+	color: #0063C9;
+	font-family: 'Anton', serif;
+}
+.navbar-toggle{
+	background-color: silver;
+}
+.navbar-primary .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.affix {
+    top:-25px;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.affix ~ .container-fluid {
+   position: relative;
+}
+
+#inicio{
+	padding-bottom: 10px;
+}
+.box_presentacion > div{
+	padding-top: 10px;
+	background: linear-gradient(-90deg, #0063C9, #90C7FF);
+	padding-bottom: 5px;
+}
+.descript{
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Patua One', cursive;
+}
+.frase{
+	color: #FFDE00;
+	font-size: 25px;
+	font-family: 'Patua One', cursive;
+}
+.boton{
+	font-size: 18px;
+	font-family: 'Patua One', cursive;	
+}
+.btn-warning{
+	box-shadow: 1px 2px 1px #4A4A4A;
+}
+.promo{
+	color: #0072E7;
+	font-size: 60px;
+	font-family: 'Patua One', cursive;
+	margin-top: 5%;
+	text-shadow: 2px 2px 2px #000;
+}
+.enae{
+	color: #FFF;
+	font-size: 40px;
+	font-family: 'Patua One', cursive;
+	text-shadow: 1px 1px 1px #000;
+	padding: 0px;
+	background-color: #FC1F2F;
+}
+#box img{
+	padding: 0px ;
 	margin: 0px;
 }
-.texto{
-    padding-top: 10%;
-    color: #FFF;
-    text-shadow: 2px 2px #000;
-    font-family: 'Courgette', cursive;
-	font-size: 40px;
+.cesalud_name{
+	padding-top: 30px;
+	font-family: 'Patua One', cursive;
+	color: #0072E7;
+	font-size: 50px;
+	text-shadow: 1px 1px 1px #000;
 }
-.dias{
-    color: #000;
-    font-family: 'Courgette', cursive;
-	font-size: 30px;
-	background-color: #fff;
+.cesalud_name_b{
+	padding-top: 30px;
+	font-family: 'Patua One', cursive;
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 1px 1px 1px #000;
 }
-.img-center{
+.cesalud_descript{
+	padding-top: 0px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+	font-family: 'Patua One', cursive;
+}
+#logo_2{
+	padding-top: 5%;
+	width: 40%;
+	margin-bottom: 10px;
+}
+.serv_contend{
+	margin-top: 10px;
+}
+.img_servicios{
 	width: 25%;
-	padding-top: 10%;
-    margin: auto;
-    display: block;
+}
+.serv_p{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Patua One', cursive;
+}
+.serv_d{
+	color: #FFDE00;
+	font-size: 20px;
+	font-family: 'Patua One', cursive;
+}
+.cont_name{
+	font-family: 'Patua One', cursive;
+	color: #0063C9;
+}
+.cont_desc{
+	font-family: 'Patua One', cursive;
+}
+#enviar{
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+.modal-footer button{
+	margin-top: 10px;
+}
+@media only screen and (max-width: 990px) {
+	.img_servicios{
+		width: 30%;
+	}
+	.serv_p{
+		font-size: 18px;
+	}
+	.serv_d{
+		font-size: 16px;
+	}
+}
+#footer{
+    background-color: #3A3A3A;
+}
+#footer div img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer_descp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.footer_descp p{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+@media only screen and (max-width: 752px) {
+	.img_servicios{
+		width: 25%;
+	}
+	.serv_p{
+		font-size: 25px;
+	}
+	.serv_d{
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 632px) {
+	.img_servicios{
+		width: 30%;
+	}
+	.serv_p{
+		font-size: 20px;
+	}
+	.serv_d{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.img_servicios{
+		width: 35%;
+	}
+	.serv_p{
+		font-size: 16px;
+	}
+	.serv_d{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 390px) {
+	.img_servicios{
+		width: 40%;
+	}
+	.serv_p{
+		font-size: 16px;
+	}
+	.serv_d{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	#logo_2{
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	#logo_2{
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 300px) {
+	#logo_2{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	.cesalud{
+		padding-top: 0px;
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 762px) {
+	.descript{
+		font-size: 20px;
+	}
+	.frase{
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 868px) {
+	.promo{
+		font-size: 40px;
+	}
+	.enae{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 706px) {
+	.promo{
+		font-size: 30px;
+		text-shadow: 1px 1px #000;
+	}
+	.enae{
+		font-size: 22px;
+		text-shadow: 1px 1px #000;
+	}
+}
+@media only screen and (max-width: 532px) {
+	.promo{
+		font-size: 30px;
+		text-shadow: 1px 1px 1px #000;
+	}
+	.enae{
+		font-size: 22px;
+		text-shadow: 1px 1px 1px #000;
+	}
 }

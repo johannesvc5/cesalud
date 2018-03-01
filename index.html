@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="UTF-8">
 	<title>CESALUD</title>
-	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Chicle|Anton|Patua+One|Courgette" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/estilo.css">
 
@@ -11,13 +12,214 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-	<div class="principal">
-		<div class="">
-			<img src="img/logo-cesalud.png" class="img-responsive img-center">
-			<p class="texto text-center">Lanzamiento en:</p>
-			<p class="dias text-center" id="dia"></p>
-		</div>
-	</div>
+	<header>
+        <div class="container">
+            <div class="center-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="input-group container-fluid">
+	                  <ul class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+	                        <a href="https://www.facebook.com/Cesalud-Carri%C3%B3n-416613232128254/?ref=admin_hovercard" target="_blank"><img class="social" alt="siguenos en facebook" title="siguenos en Facebook" src="svg/facebook.svg" height="25" width="25"></a>
+	                        <a href="URL-facebook" target="_blank"><img class="social" alt="siguenos en Twitter" src="svg/twitter.svg" title="siguenos en Twitter" height="25" width="25"></a>
+	                        <a href="URL-whatsapp" target="_blank"><img class="social" alt="siguenos en Instagram" src="svg/instagram.svg" title="siguenos en Instagram" height="25" width="25"></a>
+	                        <a href="URL-correo" target="_blank"><img class="social" alt="escribenos un Correo" src="svg/correo.svg" title="escribenos un Correo" height="25" width="25"></a>
+	                  </ul>
+                </div>
+            </div>
+            <div class="center-block col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                <div class="center-block input-group">
+                  	<a href="#inicio" class="center-block img-responsive" id="logo">
+                    	<img class="center-block col-lg-12 col-md-12 col-xs-12 col-sm-12 " src="img/logo.png">
+                  	</a>
+                </div>
+            </div>
+            <div class="bottom-left col-lg-4 col-md-3 col-sm-2 col-xs-12">
+                <div class="input-group container-fluid">
+                    <form action="login.php" class="navbar-form navbar-right" role="submit">
+                        <button id="insecion" class="btn btn-primary" type="submit">
+                            <span class="glyphicon glyphicon-user"><p id="ingrese">INGRESE</p></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-primary" data-spy="affix" data-offset-top="100">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#inicio">Inicio</a></li> 
+                        <li><a href="#we">Nosotros</a></li>
+                        <li><a href="#serv">Servicios</a></li>
+                        <li><a href="#contact">Contactenos</a></li>                        
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="inicio">
+    	<div id="box">
+    		<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+				<p class="text-center promo">Únete y preparate <br class=".hidden-xs">con los mejores</p>
+				<p class="text-center enae">PRE ENAE 2018</p>
+			</div>
+    		<img src="img/slide.png" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+    	</div>
+    	<div class="box_presentacion">
+	        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		        <div class="container">
+			        <img class="img-responsive col-lg-4 col-md-4 col-sm-6 col-xs-12 center-block" id="presentacion" src="img/presentacion.png">
+			        <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+				        <p class="text-center descript">Clases por temas, Lecturas, Desafíos, Examenes, Ejercicios, en tu móvil o escritorio</p>
+				        <p class="text-center frase">¡Invierte hoy para tu futuro!</p>
+				        <button id="insecion" class="btn btn-warning btn-md center-block" type="button" data-toggle="modal" data-target="#suscribete">
+				            <p id="ingrese" class="boton">Suscribete Ahora</p>
+				        </button>
+			        </div>
+			    </div>
+			</div>
+        </div> 
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="suscribete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title text-center cesalud_name" id="exampleModalLabel">Informes:</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-12">
+                        <img src="img/info.png" class="img-responsive">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn center-block btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nosotros">
+        <div id="we" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         	<div class="container">
+	         	<p class="text-center cesalud_name col-lg-12 col-md-12 col-sm-12 col-xs-12">Nosotros</p>
+	            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                    <a class="center-block img-responsive" id="logo_2">
+                        <img class="center-block col-lg-12 col-md-12 col-xs-12 col-sm-12" src="img/logo.png">
+                    </a>
+	                <p class="cesalud_descript text-justify col-lg-12 col-md-12 col-xs-12 col-sm-12">Somos un Centro Educativo que brinda Servicios de Educación enfocados en la Salud y afines, a nuestros usuarios con un enfoque personalizado. En concordancia al desarrollo tecnológico y adaptándonos al mismo llevamos las clases al 100% virtuales adaptables a cualquier dispositivo desde el que se acceda, apuntando al desarrollo profesional de calidad para nuestros usuarios seleccionamos información de calidad por profesionales especializados en cada tema enfocados en los planes curriculares universitarios nacionales e internacionales. Principio: Calidad educativa para el desarrollo profesional óptimo de nuestros usuarios.</p>
+	            </div>
+	            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+	                <img class="img-responsive" src="img/doctora.png">
+	            </div>
+            </div>
+        </div> 
+    </div>
+    <div id="servicios">
+        <div class="box_presentacion">
+            <div id="serv" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        	   <div class="container">
+                    <p class="text-center cesalud_name_b col-lg-12 col-md-12 col-sm-12 col-xs-12">Servicios</p>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 serv_contend">
+                        <img class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-5 center-block img_servicios" src="img/icono/dispositivos.png">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                            <p class="text-center serv_p">Accede desde cualquier dispositivo.</p>
+                            <p class="text-center serv_d">PC, Laptop, Tablet y SmartPhones.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 serv_contend">
+                        <img class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-5 center-block img_servicios" src="img/icono/entrega.png">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                            <p class="text-center serv_p">Disponibilidad a todas horas del día.</p>
+                            <p class="text-center serv_d">Accede a todas horas todo los días.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 serv_contend">
+                        <img class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-5 center-block img_servicios" src="img/icono/horario.png">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                            <p class="text-center serv_p">Horarios adaptables a cada usuario.</p>
+                            <p class="text-center serv_d">Estudia a tu ritmo y según tu tiempo.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 serv_contend">
+                        <img class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-5 center-block img_servicios" src="img/icono/soporte-de-compras-en-linea.png">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                            <p class="text-center serv_p">Estudia desde donde te encuentres.</p>
+                            <p class="text-center serv_d">Estudia desde tu hogar o de viaje.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 serv_contend">
+                        <img class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-5 center-block img_servicios" src="img/icono/soporte-de-red-de-trabajo.png">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                            <p class="text-center serv_p">Soporte a cualquier hora del día.</p>
+                            <p class="text-center serv_d">Haz tus preguntas o consultas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 serv_contend">
+                        <img class="img-responsive col-lg-4 col-md-4 col-sm-4 col-xs-5 center-block img_servicios" src="img/icono/test-online.png">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-7">
+                            <p class="text-center serv_p">Acceso a los simulacros de examenes.</p>
+                            <p class="text-center serv_d">Mide tus mejoras y progreso.</p>
+                        </div>
+                    </div>
+                    
+			    </div>
+            </div>
+        </div> 
+    </div>
+    <div id="contato">
+        <div class="box">
+            <div id="contact" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="container">
+                <p class="text-center cesalud_name col-lg-12 col-md-12 col-sm-12 col-xs-12">Contacto</p>
+                    <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+                        <h3 class="text-left cont_name">Déjenos su mensaje:</h3>
+                        <form role="form" class="form-group" action="contacto_form.php" method="post">
+                            <div class="form-group">
+                                <label class="label_contact cont_desc" for="nombre">Ingrese su Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <label class="label_contact cont_desc" for="correo">Ingrese su E-Mail:</label>
+                                <input type="email" class="form-control" id="correo" placeholder="Correo:">
+                            </div>
+                            <div class="form-group">
+                                <label class="label_contact cont_desc" for="asunto">Ingrese el Asunto:</label>
+                                <input type="text" class="form-control" id="asunto" placeholder="Asunto:">
+                            </div>
+                            <div id="box_mensj">
+                                <label class="label_contact cont_desc" for="mensaje">Ingrese su Mensaje:</label>
+                                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn center-block btn-md btn-warning" id="enviar">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer>
+        <div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+            <img class="col-lg-2 col-lg-offset-1 col-md-3 col-xs-12 col-sm-4" src="img/logo_2.png" width="15%" height="15%">
+            <div class="footer_descp text-right col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                <p>Celular: <strong>935784094 / 927796852 / 985879947</strong></p>
+                <p>Correo: <strong>informes@cesaludcarrion.com</strong></p>
+                <p>&copy; 2018 <strong>www.cesaludcarrion.com</strong><p>
+                <p>by <a target="_blank" href="https://www.facebook.com/Johannesvicente">Johannes</a> <strong>| johannesvc5@gmail.com </strong><p>
+            </div>
+        </div>
+        <div id="contact" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    </footer>
 	<script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.js"></script>	
